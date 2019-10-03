@@ -1,9 +1,12 @@
-package io.wewumbo.trainning.dagger
+package io.wewumbo.trainning.dagger.modules.feature1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
+import io.wewumbo.trainning.dagger.ApplicationSingleton
+import io.wewumbo.trainning.dagger.R
+import io.wewumbo.trainning.dagger.ScopeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 

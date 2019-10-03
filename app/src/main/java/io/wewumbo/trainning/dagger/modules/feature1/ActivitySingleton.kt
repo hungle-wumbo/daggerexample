@@ -1,4 +1,4 @@
-package io.wewumbo.trainning.dagger
+package io.wewumbo.trainning.dagger.modules.feature1
 
 class ActivitySingleton  {
 
