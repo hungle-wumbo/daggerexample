@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
     abstract class BindModule {
 
         @ScopeActivity
-        @ContributesAndroidInjector(modules = [
-        ])
+        @ContributesAndroidInjector()
         abstract fun contributeActivity(): MainActivity
     }
 }
