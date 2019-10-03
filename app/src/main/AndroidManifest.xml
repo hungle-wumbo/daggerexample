@@ -21,7 +21,7 @@
         <activity android:name=".modules.feature2.Feature2Activity">
         </activity>
 
-        <activity android:name=".modules.feature3.SubFeature1.SubFeature1Activity">
+        <activity android:name=".modules.feature3.subfeature1.SubFeature1Activity">
         </activity>
     </application>
 

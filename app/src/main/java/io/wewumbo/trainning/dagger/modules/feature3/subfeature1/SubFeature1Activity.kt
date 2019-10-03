@@ -1,4 +1,4 @@
-package io.wewumbo.trainning.dagger.modules.feature3.SubFeature1
+package io.wewumbo.trainning.dagger.modules.feature3.subfeature1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

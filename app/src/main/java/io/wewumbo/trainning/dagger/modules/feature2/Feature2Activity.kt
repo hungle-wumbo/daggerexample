@@ -9,7 +9,7 @@ import io.wewumbo.trainning.dagger.ApplicationSingleton
 import io.wewumbo.trainning.dagger.R
 import io.wewumbo.trainning.dagger.ScopeActivity
 import io.wewumbo.trainning.dagger.modules.ActivitySingleton
-import io.wewumbo.trainning.dagger.modules.feature3.SubFeature1.SubFeature1Activity
+import io.wewumbo.trainning.dagger.modules.feature3.subfeature1.SubFeature1Activity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
