@@ -16,7 +16,8 @@ import javax.inject.Singleton
         ApplicationModule::class,
         AndroidSupportInjectionModule::class,
         Feature1Activity.BindModule::class,
-        Feature2Activity.BindModule::class
+        Feature2Activity.BindModule::class,
+        SubFeature1Activity.BindModule::class
     ]
 )
 interface ApplicationComponent {

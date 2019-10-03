@@ -35,6 +35,7 @@ class SubFeature1Activity : AppCompatActivity() {
 
         @ScopeActivity
         @ContributesAndroidInjector(modules = [
+            SubFeature1Module::class
         ])
         abstract fun contributeActivity(): SubFeature1Activity
     }

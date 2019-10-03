@@ -6,8 +6,7 @@ import io.wewumbo.trainning.dagger.modules.feature3.subfeature1.SubFeature1Activ
 @ScopeFeature3
 @Subcomponent(
     modules = [
-        Feature3Module::class,
-        SubFeature1Activity.BindModule::class
+        Feature3Module::class
     ]
 )
 interface Feature3Component {
