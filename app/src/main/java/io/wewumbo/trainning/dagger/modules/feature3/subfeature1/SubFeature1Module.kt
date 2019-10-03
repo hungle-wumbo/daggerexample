@@ -10,7 +10,6 @@ import io.wewumbo.trainning.dagger.modules.feature3.Feature3Singleton
 class SubFeature1Module {
 
     @Provides
-    @ScopeActivity
     fun providerActivitySingleTon(builder: Feature3Component.Builder): Feature3Singleton {
         return builder.build().requestFeature3Singleton()
     }
