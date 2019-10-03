@@ -1,6 +1,5 @@
-package io.wewumbo.trainning.dagger.modules.feature1
+package io.wewumbo.trainning.dagger.modules.feature2
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import dagger.Module
@@ -9,11 +8,10 @@ import io.wewumbo.trainning.dagger.ApplicationSingleton
 import io.wewumbo.trainning.dagger.R
 import io.wewumbo.trainning.dagger.ScopeActivity
 import io.wewumbo.trainning.dagger.modules.ActivitySingleton
-import io.wewumbo.trainning.dagger.modules.feature2.Feature1Activity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class Feature1Activity : AppCompatActivity() {
 
     @Inject
     lateinit var applicationSingleton: ApplicationSingleton
@@ -25,9 +23,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         text.text = "${applicationSingleton.say()}\r\n ${activitySingleton.say()}"
-        text.setOnClickListener {
-            startActivity(Intent(MainActivity@this, Feature1Activity::class.java))
-        }
     }
 
     @Module
@@ -35,8 +30,8 @@ class MainActivity : AppCompatActivity() {
 
         @ScopeActivity
         @ContributesAndroidInjector(modules = [
-            MainActivityModule::class
+            FeatureActivity1Module::class
         ])
-        abstract fun contributeActivity(): MainActivity
+        abstract fun contributeActivity(): Feature1Activity
     }
 }
