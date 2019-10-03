@@ -6,6 +6,10 @@ class ActivitySingleton  {
         private var count = 0
     }
 
+    init {
+        count++
+    }
+
     fun say() = "Activity Singleton: $count"
 
 }

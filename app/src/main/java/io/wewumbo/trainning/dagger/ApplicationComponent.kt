@@ -2,17 +2,16 @@ package io.wewumbo.trainning.dagger
 
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
-import io.wewumbo.trainning.dagger.modules.feature1.MainActivity
-import io.wewumbo.trainning.dagger.modules.feature2.Feature1Activity
-import io.wewumbo.trainning.dagger.modules.feature2.FeatureActivity1Module
+import io.wewumbo.trainning.dagger.modules.feature1.Feature1Activity
+import io.wewumbo.trainning.dagger.modules.feature2.Feature2Activity
 import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [
     ApplicationModule::class,
     AndroidSupportInjectionModule::class,
-    MainActivity.BindModule::class,
-    Feature1Activity.BindModule::class
+    Feature1Activity.BindModule::class,
+    Feature2Activity.BindModule::class
 ])
 interface ApplicationComponent {
 

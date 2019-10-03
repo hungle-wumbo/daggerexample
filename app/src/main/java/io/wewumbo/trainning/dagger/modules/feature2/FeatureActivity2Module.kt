@@ -6,7 +6,7 @@ import io.wewumbo.trainning.dagger.ScopeActivity
 import io.wewumbo.trainning.dagger.modules.ActivitySingleton
 
 @Module
-class FeatureActivity1Module {
+class FeatureActivity2Module {
 
     private var countInstance = 0
 
