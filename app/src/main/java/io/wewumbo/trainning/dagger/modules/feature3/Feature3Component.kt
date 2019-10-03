@@ -12,6 +12,8 @@ import io.wewumbo.trainning.dagger.modules.feature3.SubFeature1.SubFeature1Activ
 )
 interface Feature3Component {
 
+    fun requestFeature3Singleton(): Feature3Singleton
+
     @Subcomponent.Builder
     interface Builder {
         fun build(): Feature3Component
