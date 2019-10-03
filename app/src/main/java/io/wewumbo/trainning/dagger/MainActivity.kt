@@ -12,17 +12,22 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var applicationSingleton: ApplicationSingleton
 
+    @Inject
+    lateinit var activitySingleton: ActivitySingleton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        text.text = applicationSingleton.say()
+        text.text = "${applicationSingleton.say()}\r\n ${activitySingleton.say()}"
     }
 
     @Module
     abstract class BindModule {
 
         @ScopeActivity
-        @ContributesAndroidInjector()
+        @ContributesAndroidInjector(modules = [
+            MainActivityModule::class
+        ])
         abstract fun contributeActivity(): MainActivity
     }
 }
