@@ -36,6 +36,6 @@ class SubFeature1Activity : AppCompatActivity() {
         @ScopeActivity
         @ContributesAndroidInjector(modules = [
         ])
-        abstract fun contributeActivity(): io.wewumbo.trainning.dagger.modules.feature1.Feature1Activity
+        abstract fun contributeActivity(): SubFeature1Activity
     }
 }
