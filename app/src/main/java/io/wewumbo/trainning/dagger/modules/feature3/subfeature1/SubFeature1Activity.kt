@@ -26,7 +26,7 @@ class SubFeature1Activity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         text.text = "${applicationSingleton.say()}\r\n ${feature3Singleton.say()}"
         text.setOnClickListener {
-            startActivity(Intent(MainActivity@this, Feature2Activity::class.java))
+            startActivity(Intent(MainActivity@this, SubFeature1Activity::class.java))
         }
     }
 
