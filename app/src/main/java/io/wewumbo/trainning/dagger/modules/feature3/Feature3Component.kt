@@ -1,7 +1,6 @@
 package io.wewumbo.trainning.dagger.modules.feature3
 
 import dagger.Subcomponent
-import io.wewumbo.trainning.dagger.modules.feature3.subfeature1.SubFeature1Activity
 
 @ScopeFeature3
 @Subcomponent(
